@@ -7,8 +7,8 @@
  */
 
 // Check Server PHP Version
-if (version_compare('7.4', phpversion(), '>')) {
-    die('You must be using PHP 7.4 or greater.');
+if (version_compare('7.0', phpversion(), '>')) {
+    die('You must be using PHP 7.0 or greater.');
 }
 
 // Check WP Version
@@ -47,7 +47,11 @@ add_action('wp_enqueue_scripts', 'include_css_files');
  * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
  */
 function include_js_files() {
-    wp_enqueue_script('idm250-js', get_template_directory_uri() . 'script.js');
+    wp_enqueue_script('idm250-js', get_template_directory_uri() . 'script.js', [],
+    false,
+    true
+);
+
 }
 
 // When WP performs this action, call our function
