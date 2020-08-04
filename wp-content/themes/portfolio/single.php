@@ -1,16 +1,15 @@
 <?php include 'header.php';?>
 
+</div>
+    <?php while (have_posts()) : the_post(); ?>
+    <div class="page_builder"> <?php the_content(); ?> </div>
+    <?php endwhile; ?>
+
 <body id="single">
 <main id="single_main">
 
     <div id="hero">
         <img src="" alt="'hero' image" class="hero" id="sc1">
-    </div>
-    <?php while (have_posts()) : the_post(); ?>
-    <div class="page_builder"> <?php the_content(); ?> </div>
-    <?php endwhile; ?>
-
-<!--
     <h1 id="h1_single">Header</h1>
     
     <div id="head" class="example">

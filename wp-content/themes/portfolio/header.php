@@ -11,7 +11,7 @@
 </head>
 
 <body <?php body_class(); ?>id="body">
-<?php wp_nav_menu(['theme_location' => 'primary_menu']);?>
+<?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
 
     <div class="top">
     <div  class="head_logo">
