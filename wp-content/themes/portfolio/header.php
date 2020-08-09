@@ -11,7 +11,6 @@
 </head>
 
 <body <?php body_class(); ?>id="body">
-<?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
 
     <div class="top">
     <div  class="head_logo">
@@ -25,3 +24,4 @@
         <a href="archive.php">artwork</a>
     </div>
     </div>    
+    <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>

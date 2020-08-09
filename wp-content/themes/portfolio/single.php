@@ -1,10 +1,32 @@
-<?php include 'header.php';?>
+<?php 
+/*die('die');**/
+get_header();?>
+<main class="main-content">
+  <?php while (have_posts()) : the_post(); ?>
+    <div class="">
+        <?php  the_category(); ?>
+        <!-- Main Content -->
+        <div id="hero">
+          <?php the_post_thumbnail(); ?>
+          <h1 id="h1_single"><?php the_title(); ?></h1>
+        </div>
+          
+          <div class="intro">
+            <?php the_excerpt();?>
+          </div>
 
-</div>
-    <?php while (have_posts()) : the_post(); ?>
-    <div class="page_builder"> <?php the_content(); ?> </div>
-    <?php endwhile; ?>
+          <div class="page-builder">
+            <?php the_content(); ?>
+          </div>
+            <?php the_tags(); ?>
+        </div>
 
+        <?php get_sidebar(); ?>
+    </div>
+  <?php endwhile; ?>
+</main>
+<?php get_footer(); ?>
+<!--
 <body id="single">
 <main id="single_main">
 
@@ -58,6 +80,5 @@
     </div>
 
 <br><br><br><br>
-<?php include 'footer.php'; ?>
 </main>
 -->
