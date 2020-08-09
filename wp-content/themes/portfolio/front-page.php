@@ -1,4 +1,8 @@
-<?php get_header();?>
+<?php get_header();
+
+
+
+?>
 
 <!--
 <body id="body">
@@ -23,6 +27,7 @@
             <a href="archive.php">artwork</a>
         </div>
     </div>
+
 
     
 
