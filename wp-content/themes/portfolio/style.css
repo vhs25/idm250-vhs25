@@ -44,6 +44,9 @@ Text Domain: portfolio
 html{
     margin: none;
 }
+img{
+    max-height: 500px;
+}
 .post-template-default{
     font-family: sansBook;
     margin: 0;
@@ -70,7 +73,13 @@ html{
     max-width: max-content;
     margin: 1rem;
 }
-
+.wp-block-image, .size-large{
+    margin: 1rem 0;
+}
+figcaption{
+    font-size: 1.1rem;
+    padding: 0 0 0 1rem;
+}
 #single{
     font-family: sansBook;
     font-size: 100%;
