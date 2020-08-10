@@ -8,7 +8,7 @@ get_header();?>
         <!-- Main Content -->
         <div id="hero">
           <?php the_post_thumbnail(); ?>
-          <h1 id="h1_single"><?php the_title(); ?></h1>
+          <h1 class="h1_single"><?php the_title(); ?></h1>
         </div>
           
           <div class="intro">

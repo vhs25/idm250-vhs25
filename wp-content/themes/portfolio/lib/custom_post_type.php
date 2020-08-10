@@ -46,5 +46,3 @@ function register_project_cpt(){
     register_post_type('projects', $args);
 }
 add_action('init', 'register_project_cpt');
-
-?>

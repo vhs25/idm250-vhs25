@@ -40,6 +40,9 @@ Text Domain: portfolio
     src: url(_sansserifbookflf-webfont.woff) format('woff');
     src: url(_sansserifbookflf-webfont.woff2) format('woff2');
 }
+*{
+    background-color: #d3a3ff;
+}
 
 #single{
     font-family: sansBook;

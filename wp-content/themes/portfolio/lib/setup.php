@@ -14,10 +14,10 @@ add_action('after_setup_theme', 'add_post_thumbnails_support');
  */
 function include_css_files() {
     // Example of including an external link
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    // wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
     // Example of including a style local to your theme root
-    wp_enqueue_style('idm250-css', get_template_directory_uri() . 'style.css');
+    wp_enqueue_style('portfolio_css', '/wp-content/themes/portfolio/style.css');
 }
 
 // When WP performs this action, call our function

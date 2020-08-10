@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Header</title>
     <?php wp_head(); ?>
-    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>id="body">
