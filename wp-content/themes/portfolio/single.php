@@ -1,9 +1,8 @@
 <?php 
-/*die('die');**/
 get_header();?>
 <main class="main-content">
   <?php while (have_posts()) : the_post(); ?>
-    <div class="">
+    <div class="single_main">
         <?php  the_category(); ?>
         <!-- Main Content -->
         <div id="hero">

@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<!--
 <body id="body">
     <div class="head">
         <div class="head_logo">
@@ -30,5 +30,6 @@
             <p>As a hobby, I love to draw and paint. I have been practicing fine art since high school and it's one of the things that drew me to the IDM program.</p>
     </div>
     </main>
-    
+   --> 
     <?php get_footer();?>
+    

@@ -41,14 +41,48 @@ Text Domain: portfolio
     src: url(_sansserifbookflf-webfont.woff2) format('woff2');
 }
 
+html{
+    margin: none;
+}
+.post-template-default{
+    font-family: sansBook;
+    margin: 0;
+}
+.menu{
+    display: none;
+}
+.post-categories{
+    display: none;
+}
+.intro{
+    display: none;
+}
+#sidebar{
+    display: none;
+}
+.page-builder{
+    padding: none;
+}
+.wp-block-quote{
+    font-size: 1.5rem;
+    border-top: 2px dotted #621da1;
+    border-bottom: 2px dotted #621da1;
+    max-width: max-content;
+    margin: 1rem;
+}
+
 #single{
     font-family: sansBook;
     font-size: 100%;
     box-sizing: border-box;
     margin: auto;
+
 }
 
-#single_main{
+.single_main{
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
     border-right: .25px solid black;
     border-left: .25px solid black;
 }
@@ -67,18 +101,24 @@ Text Domain: portfolio
 }
 
 .h1_single{
+    font-family: sansBook;
     font-size: 2.9rem;
-    padding: 2rem 3rem;
+    padding: 4rem 3rem 0 0;
+    margin: 0;
 }
 #single{
     display: block;
     margin: center;
 }
-.p_single{
+.project-p, .project-list{
     font-size: 1.3rem;
     line-height: 150%;
     padding: 0 0 1.5rem;
 }
+.project-list{
+    padding: 0 0 1.5rem 2rem;
+}
+
 .h{
     font-size: 1.5rem;
     padding: 1.25rem 0;
@@ -103,9 +143,11 @@ div{
 .example{
     background-color: var(--gray);
 }
-#hero{
-    max-height: 80%;
-    display: inline;
+.attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
     padding: 0;
 }
 .grid{
@@ -133,17 +175,13 @@ div{
 
 
 @media screen and (max-width: 1354px){
-    .hero{
-        max-height: 200px;
-    }
+
     #single{
         max-width: 85%;
     }
 }
 @media screen and (max-width: 1135px){
-    .hero{
-        max-height: 200px;
-    }
+
     #single{
         max-width: 85%;
     }
@@ -154,22 +192,18 @@ div{
     }
 }
 @media screen and (max-width: 896px){
-    .hero{
-        max-height: 175px;
-    }
+
     #single{
         max-width: 90%;
     }
 }
 @media screen and (max-width: 647px){
-    .hero{
-        max-height: 175px;
-    }
+
     #single{
         margin: 0;
         max-width: 100%;
     }
-    #single_main{
+    .single_main{
         max-width: 100%;
         border-right: none;
         border-left: none;
@@ -186,14 +220,10 @@ div{
     #single{
         width: 100%;
     }
-    .hero{
-        max-height: 150px;
-    }
+
 }
 @media screen and (max-width: 530px){
-    .hero{
-        max-height: 125px;
-    }
+
     h1{
         font-size: 2rem;
     }
@@ -207,9 +237,7 @@ div{
     }
 }
 @media screen and (max-width: 352px){
-    .hero{
-        max-height: 125px;
-    }
+
     #sc2{
         display: none;
     }
