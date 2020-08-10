@@ -10,4 +10,3 @@
 require get_template_directory() . '/lib/require.php';
 require get_template_directory() . '/lib/setup.php';
 require get_template_directory() . '/lib/custom_post_type.php';
-/*

@@ -27,7 +27,7 @@ add_action('wp_enqueue_scripts', 'include_css_files');
  * Include any scripts into the site the proper way
  *
  * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
- 
+ */
 function include_js_files() {
     wp_enqueue_script('idm250-js', get_template_directory_uri() . 'script.js', [],
     false,
@@ -35,7 +35,7 @@ function include_js_files() {
 );
 
 }
-*/
+
 
 
 // When WP performs this action, call our function
