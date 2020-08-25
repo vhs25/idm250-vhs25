@@ -1,6 +1,6 @@
 <?php 
 get_header();?>
-<main class="main-content">
+<main class="main-content" id="single">
   <?php while (have_posts()) : the_post(); ?>
     <div class="single_main">
         <?php  the_category(); ?>

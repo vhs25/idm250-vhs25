@@ -148,7 +148,7 @@ figcaption{
     margin: auto;
     max-width: 100%;
 }
-div{
+#single div{
     box-sizing: content-box;
     max-width: 110%;
     padding: 2rem 4rem;
@@ -554,4 +554,33 @@ div{
         max-width: 1100px;
         justify-items: center;
     }
+}
+
+
+/** 404 PAGE **/
+.nrf_main{
+    margin: 4rem auto;
+    height: 100%;
+}
+.nrf_decoration{
+    background-color: #33a2b3;
+    padding: 4rem;
+    border-radius: 40%;
+    margin: 4rem 2rem;
+    border: 12px double #005f6d;
+}
+.nrf_border{
+    padding: 2rem .75rem;
+    border-radius: 40%;
+    border: 20px double white;
+}
+.nrf_h{
+    width: max-content;
+    font-family: sansBold;
+    margin: auto;
+    color: var(--linkpurple);
+    background-color: #d3a3ff;
+    padding: 4rem;
+    border-radius: 40%;
+    border: 15px double #621da1;
 }
