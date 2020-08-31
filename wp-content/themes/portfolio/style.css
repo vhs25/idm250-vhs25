@@ -568,11 +568,14 @@ figcaption{
     border-radius: 40%;
     margin: 4rem 2rem;
     border: 12px double #005f6d;
+    box-shadow: 0 0 40px #d3a3ff;
 }
 .nrf_border{
     padding: 2rem .75rem;
     border-radius: 40%;
     border: 20px double white;
+    box-shadow: 0 0 30px #005f6d;
+
 }
 .nrf_h{
     width: max-content;
@@ -583,4 +586,5 @@ figcaption{
     padding: 4rem;
     border-radius: 40%;
     border: 15px double #621da1;
+    box-shadow: 0 0 30px #005f6d;
 }
