@@ -14,7 +14,7 @@
     <div class="top">
     <div  class="head_logo">
         <a href="index.php">
-            <img src="logo.png" alt="painted header reading Victoria Stauffer">
+            <img src="<?php get_template_directory() . 'images/logo.png'; ?>" alt="painted header reading Victoria Stauffer">
         </a>
     </div>
 

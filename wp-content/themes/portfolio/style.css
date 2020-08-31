@@ -41,9 +41,10 @@ Text Domain: portfolio
     src: url(_sansserifbookflf-webfont.woff2) format('woff2');
 }
 
-html{
+html, body {
+    height: 100%;
     margin: none;
-}
+  }
 img{
     max-height: 500px;
 }
@@ -360,6 +361,11 @@ figcaption{
     max-width: 90%;
 }
 
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -138px;
+}
+
 .footer{
     display: flex;
     flex-direction: row;
@@ -369,6 +375,14 @@ figcaption{
     margin: 2rem 0 0;
     border-radius: 80% 80% 0 0;
     box-shadow: 0 -10px #621da1;
+
+}
+.push{
+    height: 50px;
+}
+
+.center_home_content{
+    margin-top: 10%;
 }
 
 @media screen and (max-width: 350px){
