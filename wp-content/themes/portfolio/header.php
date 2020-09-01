@@ -19,23 +19,17 @@
     <div class="head">
         <div class="head_logo">
             <a href="index.php">
-                <img src="small/logo_small.png" alt="painted header reading Victoria Stauffer" class="small">
-                <img src="large/logo_large.png" alt="painted header reading Victoria Stauffer" class="large">
+                <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/07/logo.png" alt="painted header reading Victoria Stauffer" class="small">
+                <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/09/logo_large.png" alt="painted header reading Victoria Stauffer" class="large">
             </a>
         </div>
 
         <picture class="portrait">
-            <img
-                 src="med/portrait_med.png" alt="painted portrait of myself, purple monochrome."
-                 sizes="50vw" 
-                 srcset="med/portrait_med.png 800vw,
-                         large/portait_large.png 1000vw">
+            <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/09/wp_portrait.png" alt="painted portrait of me" >
         </picture>
 
-        <div class="nav">
-            <a href="archive.php">projects</a>
-            <a href="archive.php">artwork</a>
-        </div>
+        <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
+
     </div>
 
 <?php else: ?>
@@ -50,10 +44,6 @@
         </a>
     </div>
     <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
-    <div class="nav">
-        <a href="archive.php">projects</a>
-        <a href="archive.php">artwork</a>
-    </div>
     </div>    
 </div>
 

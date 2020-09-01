@@ -327,6 +327,7 @@ figcaption{
 }
 .nav, .menu-item{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
+    display: inline;
 }
 
 .menu-item{
@@ -431,11 +432,10 @@ figcaption{
 .push{
     height: 138px;
 }
-
-.center_content{
-    margin-top: 10%;
-}
 **/
+.center_content{
+    margin: 6% auto 8%;
+}
 @media screen and (max-width: 350px){
    body{ max-width: 100%;}
    .pop-up_box{
@@ -546,7 +546,7 @@ figcaption{
     .head_logo img{
         width: 400px;
     }
-    .nav, .menu-item{
+    .nav, #menu-portfolio-menu{
         font-size: 1.2em;
         text-align: center;
         padding: 5% 0 .5rem 0;
@@ -598,7 +598,8 @@ figcaption{
         grid-row-start: 1;
         grid-row-end: 3;
         justify-self: end;
-
+        max-height: 60%;
+        max-width: 70%;
     }
     img.small{
         display: none;
@@ -627,14 +628,20 @@ figcaption{
     :link{
         text-decoration: none;
     }
-    .nav, .menu-item{
-        justify-self: center;
+    #menu-portfolio-menu-container{
+        text-align: center;
     }
-    .nav a, .menu-item a{
+    .nav, #menu-portfolio-menu{
+        text-align: center;
+        justify-self: center;
+
+        padding-left: 0;
+    }
+    .nav a, #menu-item-151, #menu-item-175{
         padding: 0 1rem;
         font-size: 1.25rem;
     }
-    .nav a:first-child, .menu-item a:first-child{
+    .nav a:first-child, #menu-item-175{
         border: var(--linkpurple);
         border-style: solid;
         border-width: 0px 1.5px 0px 0px;
@@ -648,7 +655,7 @@ figcaption{
 
 }
 @media screen and (min-width: 1000px){
-    .nav, .menu-item{
+    .nav, #menu-portfolio-menu{
         font-size: 2rem;
     }
     .footer_head, .footer_txt, .body_txt{
