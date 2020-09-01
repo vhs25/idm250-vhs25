@@ -96,9 +96,6 @@ main{
     font-family: sansBook;
     margin: 0;
 }
-.menu{
-    display: none;
-}
 .post-categories{
     display: none;
 }
@@ -328,9 +325,14 @@ figcaption{
     width: 100%;
     margin: 0;
 }
-.nav{
+.nav, .menu-item{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
 }
+
+.menu-item{
+    list-style: none;
+}
+
 .body_head{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: 3rem auto 1.5rem;
@@ -544,7 +546,7 @@ figcaption{
     .head_logo img{
         width: 400px;
     }
-    .nav{
+    .nav, .menu-item{
         font-size: 1.2em;
         text-align: center;
         padding: 5% 0 .5rem 0;
@@ -625,14 +627,14 @@ figcaption{
     :link{
         text-decoration: none;
     }
-    .nav{
+    .nav, .menu-item{
         justify-self: center;
     }
-    .nav a{
+    .nav a, .menu-item a{
         padding: 0 1rem;
         font-size: 1.25rem;
     }
-    .nav a:first-child{
+    .nav a:first-child, .menu-item a:first-child{
         border: var(--linkpurple);
         border-style: solid;
         border-width: 0px 1.5px 0px 0px;
@@ -646,7 +648,7 @@ figcaption{
 
 }
 @media screen and (min-width: 1000px){
-    .nav{
+    .nav, .menu-item{
         font-size: 2rem;
     }
     .footer_head, .footer_txt, .body_txt{
