@@ -45,9 +45,53 @@ html, body {
     height: 100%;
     margin: none;
   }
-img{
-    max-height: 500px;
+
+/* PAGE FLEX */
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: space-between;
+    height: 100%;
+  }
+  /*
+.head_flex{
+    flex: 0 1 auto;
 }
+.footer_flex{
+    flex: 0 1 60px;
+}
+main{
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+/**********/
+
+/* ART POST PAGE **/
+
+.art_detail_wrapper{
+    margin: 0 auto;
+}
+
+.art_detail_image{
+    display: block;
+    max-height: 50%;
+    text-align: center;
+    margin: 10% auto 1rem;
+}
+.art_detail_title{
+    font: 2rem sansDemiBold;
+}
+
+.art_detail_description{
+    font: 1.3rem sansBook;
+    margin: 0 auto 10%;
+}
+
+/**********/
+
+
 .post-template-default{
     font-family: sansBook;
     margin: 0;
@@ -174,6 +218,16 @@ figcaption{
     max-width: 40%;
     padding: 1rem;
 }
+
+/* art posts CSS ***/
+.adp_image{
+    max-height: 700px;
+    max-width: 700px;
+}
+.adp_description{
+    font: 1.5rem sansBook;
+}
+
 
 @media screen and (min-width: 1354px){
 #single{
@@ -361,11 +415,6 @@ figcaption{
     max-width: 90%;
 }
 
-.wrapper{
-    min-height: 100%;
-    margin-bottom: -138px;
-}
-
 .footer{
     display: flex;
     flex-direction: row;
@@ -375,16 +424,16 @@ figcaption{
     margin: 2rem 0 0;
     border-radius: 80% 80% 0 0;
     box-shadow: 0 -10px #621da1;
-
 }
+/*
 .push{
-    height: 50px;
+    height: 138px;
 }
 
-.center_home_content{
+.center_content{
     margin-top: 10%;
 }
-
+**/
 @media screen and (max-width: 350px){
    body{ max-width: 100%;}
    .pop-up_box{
@@ -394,12 +443,31 @@ figcaption{
     right: 0%;
 }
 }
+
 @media screen and (max-width: 500px){
     .pop-up_box{
         max-width: 100%;
         left: 0%;
         right: 0%;
         top: 30%
+    }
+    .footer{
+        min-height: 130px;
+        padding: 1rem 0 0;
+    }
+
+    /* ART POSTS **/
+    .art_detail_wrapper{
+        max-width: 90%;
+    }
+    .art_detail_image{
+        max-width: 100%;
+    }
+    .art_detail_title{
+        padding: 0 5%;
+    }
+    .art_detail_description{
+        padding: 0 5%;
     }
 }
 
@@ -413,6 +481,21 @@ figcaption{
         left: 0%;
         right: 0%;
         top: 30%
+    }
+
+
+    /* ART POSTS **/
+    .art_detail_wrapper{
+        max-width: 90%;
+    }
+    .art_detail_image{
+        max-width: 80%;
+    }
+    .art_detail_title{
+        padding: 0 10%;
+    }
+    .art_detail_description{
+        padding: 0 10%;
     }
 }
 
@@ -430,6 +513,19 @@ figcaption{
         height: 560px;
     }
 
+    /* ART POSTS **/
+    .art_detail_wrapper{
+        max-width: 60%;
+    }
+    .art_detail_image{
+        max-width: 80%;
+    }
+    .art_detail_title{
+        padding: 0 10%;
+    }
+    .art_detail_description{
+        padding: 0 10%;
+    }
 }
 
 
@@ -469,6 +565,13 @@ figcaption{
     }
     .pop-up_box{
         top: 15%
+    }
+
+    .footer{
+        background-color: rgba(255, 255, 255, 0);
+        margin: 2rem 10% 0;
+        border-radius: 0;
+        box-shadow: 0 -1px #621da1;
     }
 }
 
@@ -540,6 +643,7 @@ figcaption{
     .pop-up_box{
         top: 15%
     }
+
 }
 @media screen and (min-width: 1000px){
     .nav{
@@ -568,37 +672,42 @@ figcaption{
         max-width: 1100px;
         justify-items: center;
     }
+
+
+    /* ART POSTS **/
+    .art_detail_wrapper{
+        max-width: 50%;
+    }
+    .art_detail_image{
+        max-width: 80%;
+    }
+    .art_detail_title{
+        padding: 0 10%;
+    }
+    .art_detail_description{
+        padding: 0 10%;
+    }
 }
 
 
 /** 404 PAGE **/
-.nrf_main{
-    margin: 4rem auto;
-    height: 100%;
-}
+
 .nrf_decoration{
     background-color: #33a2b3;
     padding: 4rem;
     border-radius: 40%;
     margin: 4rem 2rem;
-    border: 12px double #005f6d;
-    box-shadow: 0 0 40px #d3a3ff;
+    border: 15px double #005f6d;
 }
-.nrf_border{
-    padding: 2rem .75rem;
-    border-radius: 40%;
-    border: 20px double white;
-    box-shadow: 0 0 30px #005f6d;
 
-}
 .nrf_h{
     width: max-content;
     font-family: sansBold;
     margin: auto;
     color: var(--linkpurple);
-    background-color: #d3a3ff;
     padding: 4rem;
     border-radius: 40%;
-    border: 15px double #621da1;
+    border: 10px double #621da1;
     box-shadow: 0 0 30px #005f6d;
+    background-color: #d3a3ff7e;
 }

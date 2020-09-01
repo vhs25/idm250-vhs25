@@ -53,12 +53,6 @@ function register_theme_sidebar() {
         'id'          => 'blog-sidebar',
         'description' => 'This is a custom sidebar for my theme'
     ]);
-
-    // register_sidebar([
-    //     'name'        => 'Footer Column 1',
-    //     'id'          => 'footer-column-1',
-    //     'description' => 'This is a custom sidebar for my theme'
-    // ]);
 }
 
 add_action('widgets_init', 'register_theme_sidebar');
@@ -71,8 +65,9 @@ add_action('widgets_init', 'register_theme_sidebar');
  */
 function register_theme_navigation() {
     register_nav_menus([
-        'portfolio-menu' => 'portfolio-menu'
+        'portfolio-menu' => 'Portfolio Menu'
     ]);
 }
 
 add_action('after_setup_theme', 'register_theme_navigation');
+

@@ -8,13 +8,19 @@
     <title>Header</title>
     <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>id="body">
 
+<?php 
+   /* $simple_head=**/
+?>
+
+<section class="flex-page">
+<div class="head_flex">
+<div class="simple_head">
     <div class="top">
     <div  class="head_logo">
-        <a href="index.php">
-            <img src="<?php get_template_directory() . 'images/logo.png'; ?>" alt="painted header reading Victoria Stauffer">
+        <a href="http://localhost:8888/idm250-vhs25/">
+            <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/07/logo.png" alt="Painted header reading Victoria Stauffer">
         </a>
     </div>
 
@@ -24,10 +30,10 @@
     </div>
     </div>    
     <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
+</div>
 
-
-    <!--
-<body id="body">
+<!--
+<div class="fancy_head">
     <div class="head">
         <div class="head_logo">
             <a href="index.php">
@@ -50,3 +56,6 @@
         </div>
     </div>
 -->
+</div>
+</div>
+

@@ -6,7 +6,8 @@
             <p>vstauffer21@gmail.com</p>
             <p>(443)907-2460</p>
         </div>
-    </div>
-
+<?php wp_footer(); ?>
+</div>
+</section>
     </body>
 </html>
