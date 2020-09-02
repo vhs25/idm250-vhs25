@@ -368,6 +368,10 @@ figcaption{
     padding: 0 .5rem;
     max-width: 85%;
 }
+.post_thumbnail img{
+    max-height: 350px;
+    object-fit: cover;
+}
 .tile{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
@@ -375,16 +379,22 @@ figcaption{
     align-content: space-around;
     padding: 0;
 }
+.tile:hover{
+    box-shadow: 0 0 10px gray;
+}
 .tile p {
     width: 325px;
     font-family: sansBook, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
     line-height: 2rem;
 }
-.tile header{
+.tile h2{
     margin: 1rem auto 1.5rem;
     width: 325px;
     font-size: 1.15rem;
+}
+.tile:active{
+    color: #621da1;
 }
 .head{
     padding: 0;
@@ -443,6 +453,10 @@ figcaption{
     max-width: 100%;
     left: 0%;
     right: 0%;
+}
+.post_thumbnail img{
+    width: 100%;
+    object-fit: cover;
 }
 }
 
@@ -561,6 +575,12 @@ figcaption{
     }
     :link{
         text-decoration: none;
+    }
+    .post_thumbnail img{
+        max-width: 350px;
+        max-height: 350px;
+        object-fit: cover;
+        margin: 3rem auto 0;
     }
     .tile{
         margin: 3rem auto;

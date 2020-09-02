@@ -26,7 +26,7 @@ function register_project_cpt_1(){
       'page-attributes',
       'post-formats'
   ],
-  'taxonomies'            => [],
+  'taxonomies'            => array( 'category' ),
   'hierarchical'          => false,
   'public'                => true,
   'show_ui'               => true,
@@ -48,8 +48,8 @@ function register_project_cpt_1(){
 
 
     $args = [
-      'label'                 => 'Art Posts',
-  'labels'                => [
+    'label'                 => 'Art Posts',
+    'labels'                => [
     'name'                  => 'Art Posts',
     'singular_name'         => 'Art Post'
   ],
@@ -66,7 +66,7 @@ function register_project_cpt_1(){
     'page-attributes',
     'post-formats'
 ],
-'taxonomies'            => [],
+'taxonomies'            => array( 'category' ),
 'hierarchical'          => false,
 'public'                => true,
 'show_ui'               => true,
