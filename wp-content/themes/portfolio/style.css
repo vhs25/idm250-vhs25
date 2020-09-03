@@ -40,6 +40,19 @@ Text Domain: portfolio
     src: url(_sansserifbookflf-webfont.woff) format('woff');
     src: url(_sansserifbookflf-webfont.woff2) format('woff2');
 }
+:root{
+    /* MY COLORS **/
+    --grayteal: #cfdede;
+    --teal: #33a2b3;
+    --mydarkteal: #005f6d;
+    --darkgrayteal: #568080;
+    /*
+    --recipeteal: #256d69;
+    --darkrecipeteal: #263f3e;
+    **/
+    --lightpurple: #d3a3ff;
+    --purple: #621da1;;
+}
 
 html, body {
     height: 100%;
@@ -110,8 +123,8 @@ main{
 }
 .wp-block-quote{
     font-size: 1.5rem;
-    border-top: 2px dotted #621da1;
-    border-bottom: 2px dotted #621da1;
+    border-top: 2px dotted var(--purple);
+    border-bottom: 2px dotted var(--purple);
     max-width: max-content;
     margin: 1rem;
 }
@@ -141,18 +154,12 @@ figcaption{
     border-right: .25px solid black;
     border-left: .25px solid black;
 }
-:root{
-    /* Can add custom colors here: **/
-
-    --teal: #256d69;
-    --gray: #cfdede;
-}
 .img_single{
     display: block;
     margin: center;
 }
 #head{
-    background-color: var(--gray);
+    background-color: var(--grayteal);
 }
 
 .h1_single{
@@ -196,7 +203,7 @@ figcaption{
     padding: 2rem 4rem;
 }
 .example{
-    background-color: var(--gray);
+    background-color: var(--grayteal);
 }
 .attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image{
     max-width: 100%;
@@ -223,6 +230,36 @@ figcaption{
 }
 .adp_description{
     font: 1.5rem sansBook;
+}
+
+/* SEARCH ICON **/
+
+.search_form{
+    height: 50px;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+.search_button{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.search_button img{
+    max-width: 50px;
+}
+.search_button img:active{
+    box-shadow: var(--darkteal);
+}
+#search_field{
+    position: absolute;
+    margin: 17.25px 1rem;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    border-bottom: .25px solid var(--darkgrayteal);
+    font-family: sansBook;
+    font-size: 1.8rem;
+    color: var(--darkgrayteal);
 }
 
 
@@ -311,14 +348,6 @@ figcaption{
 
 /* HOME PAGE (front-page) **/
 
-:root{
-    --myteal: #33a2b3;
-    --primary: var(--myteal);
-    
-    --linkpurple: #621da1;
-    --primary: var(--linkpurple);
-}
-
 #body{
     font-size: 100%;
     box-sizing: border-box;
@@ -338,7 +367,7 @@ figcaption{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: 3rem auto 1.5rem;
     padding: 0;
-    color: var(--myteal);
+    color: var(--teal);
     font-size: 2rem;
     max-width: 85%;
 }
@@ -368,10 +397,7 @@ figcaption{
     padding: 0 .5rem;
     max-width: 85%;
 }
-.post_thumbnail img{
-    max-height: 350px;
-    object-fit: cover;
-}
+
 .tile{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
@@ -394,7 +420,7 @@ figcaption{
     font-size: 1.15rem;
 }
 .tile:active{
-    color: #621da1;
+    color: var(--purple);
 }
 .head{
     padding: 0;
@@ -409,7 +435,7 @@ figcaption{
     top: 0;
     left: 0;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: transparent;
 
     height: 100%;
     width: 100%;
@@ -433,10 +459,10 @@ figcaption{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #d3a3ff;
+    background-color: var(--lightpurple);
     margin: 2rem 0 0;
     border-radius: 80% 80% 0 0;
-    box-shadow: 0 -10px #621da1;
+    box-shadow: 0 -10px var(--purple);
 }
 /*
 .push{
@@ -446,6 +472,27 @@ figcaption{
 .center_content{
     margin: 6% auto 8%;
 }
+
+/* Menu Items WITH LINES **/
+.menu-item{
+    font-size: 1.05rem;
+}
+    .nav a, #menu-item-151{
+        padding: 0 1rem;
+        font-size: 1.05rem;
+        border: var(--purple);
+        border-style: solid;
+        border-width: 0px 1.5px 0px 1.5px;
+    }
+    .nav a:last-child, #menu-item-198{
+        padding: 0 1rem;
+        font-size: 1.05rem;
+    }
+    .nav a:first-child, #menu-item-175{
+        padding: 0 1rem;
+        font-size: 1.05rem;
+    }
+
 @media screen and (max-width: 350px){
    body{ max-width: 100%;}
    .pop-up_box{
@@ -454,10 +501,10 @@ figcaption{
     left: 0%;
     right: 0%;
 }
-.post_thumbnail img{
-    width: 100%;
-    object-fit: cover;
-}
+    .post_thumbnail img{
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -472,9 +519,15 @@ figcaption{
         padding: 1rem 0 0;
     }
 
+    .wrapper{
+        margin: 0 auto;
+    
+    }
+
     /* ART POSTS **/
     .art_detail_wrapper{
         max-width: 90%;
+
     }
     .art_detail_image{
         max-width: 100%;
@@ -484,6 +537,9 @@ figcaption{
     }
     .art_detail_description{
         padding: 0 5%;
+    }
+    .search_button img{
+        max-width: 30px;
     }
 }
 
@@ -518,6 +574,11 @@ figcaption{
 
 
 @media screen and (min-width: 825px){
+    .post_thumbnail img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+    }
     .all_tiles{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -526,7 +587,7 @@ figcaption{
     }
     .tile{
         margin: 1rem auto;
-        height: 560px;
+        /*height: 560px;**/
     }
 
     /* ART POSTS **/
@@ -560,18 +621,35 @@ figcaption{
     .head_logo img{
         width: 400px;
     }
+    .nav_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+        margin: auto;
+    }
+    #menu-portfolio-menu-container{
+        max-width: 350px;
+        text-align: center;
+        position: relative;
+    }
     .nav, #menu-portfolio-menu{
         font-size: 1.2em;
         text-align: center;
         padding: 5% 0 .5rem 0;
         margin: 0 7.5%;
 
-        border: var(--linkpurple);
+        border: var(--purple);
         border-style: solid;
         border-width: 0px 0px 1px 0px;
         
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .menu-item{
+        padding: 0 1rem;
+        margin: .5rem 0;
     }
     :link{
         text-decoration: none;
@@ -593,7 +671,7 @@ figcaption{
         background-color: rgba(255, 255, 255, 0);
         margin: 2rem 10% 0;
         border-radius: 0;
-        box-shadow: 0 -1px #621da1;
+        box-shadow: 0 -1px var(--purple);
     }
 }
 
@@ -603,9 +681,9 @@ figcaption{
    
     .head{
         width: 100%;
-        background-color: var(--myteal);
+        background-color: var(--teal);
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
         grid-template-rows: 50% 50%;
     }
 
@@ -618,8 +696,8 @@ figcaption{
         grid-row-start: 1;
         grid-row-end: 3;
         justify-self: end;
-        max-height: 60%;
-        max-width: 70%;
+        display: flex;
+        align-items: flex-end;
     }
     img.small{
         display: none;
@@ -640,31 +718,30 @@ figcaption{
         align-items: center;
         padding: 0 0 2rem;
         margin: 0 0 2.5rem;
-        background-color: var(--myteal);
+        background-color: var(--teal);
 
         border-radius: 0 0 80% 80%;
-        box-shadow: 0 10px #005f6d;
+        box-shadow: 0 10px var(--mydarkteal);
     }
     :link{
         text-decoration: none;
     }
+    .nav_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 350px;
+        margin: auto;
+    }
     #menu-portfolio-menu-container{
         text-align: center;
+        position: relative
     }
     .nav, #menu-portfolio-menu{
         text-align: center;
         justify-self: center;
 
         padding-left: 0;
-    }
-    .nav a, #menu-item-151, #menu-item-175{
-        padding: 0 1rem;
-        font-size: 1.25rem;
-    }
-    .nav a:first-child, #menu-item-175{
-        border: var(--linkpurple);
-        border-style: solid;
-        border-width: 0px 1.5px 0px 0px;
     }
     .tile{
         margin: auto;
@@ -722,21 +799,21 @@ figcaption{
 /** 404 PAGE **/
 
 .nrf_decoration{
-    background-color: #33a2b3;
+    background-color:var(--teal);
     padding: 4rem;
     border-radius: 40%;
     margin: 4rem 2rem;
-    border: 15px double #005f6d;
+    border: 15px double var(--mydarkteal);
 }
 
 .nrf_h{
     width: max-content;
     font-family: sansBold;
     margin: auto;
-    color: var(--linkpurple);
+    color: var(--purple);
     padding: 4rem;
     border-radius: 40%;
-    border: 10px double #621da1;
-    box-shadow: 0 0 30px #005f6d;
-    background-color: #d3a3ff7e;
+    border: 10px double var(--purple);
+    box-shadow: 0 0 30px var(--mydarkteal);
+    background-color: var(--lightpurple);
 }

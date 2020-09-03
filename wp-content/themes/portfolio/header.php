@@ -27,9 +27,9 @@
         <picture class="portrait">
             <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/09/wp_portrait.png" alt="painted portrait of me" >
         </picture>
-
-        <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
-
+        <div class="nav_wrapper">
+            <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
+        </div>
     </div>
 
 <?php else: ?>
@@ -48,48 +48,6 @@
 </div>
 
 <?php endif; ?>
-
-<!--
-<section class="flex-page">
-<div class="head_flex">
-<div class="simple_head">
-    <div class="top">
-    <div  class="head_logo">
-        <a href="http://localhost:8888/idm250-vhs25/">
-            <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/07/logo.png" alt="Painted header reading Victoria Stauffer">
-        </a>
-    </div>
-    <div class="nav">
-        <a href="archive.php">projects</a>
-        <a href="archive.php">artwork</a>
-    </div>
-    </div>    
-</div>
-
-
-<div class="fancy_head">
-    <div class="head">
-        <div class="head_logo">
-            <a href="index.php">
-                <img src="small/logo_small.png" alt="painted header reading Victoria Stauffer" class="small">
-                <img src="large/logo_large.png" alt="painted header reading Victoria Stauffer" class="large">
-            </a>
-        </div>
-
-        <picture class="portrait">
-            <img
-                 src="med/portrait_med.png" alt="painted portrait of myself, purple monochrome."
-                 sizes="50vw" 
-                 srcset="med/portrait_med.png 800vw,
-                         large/portait_large.png 1000vw">
-        </picture>
-
-        <div class="nav">
-            <a href="archive.php">projects</a>
-            <a href="archive.php">artwork</a>
-        </div>
-    </div>
--->
 </div>
 </div>
 
