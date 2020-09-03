@@ -9,18 +9,11 @@ get_header();?>
           <?php the_post_thumbnail(); ?>
           <h1 class="h1_single"><?php the_title(); ?></h1>
         </div>
-          
-          <div class="intro">
-            <?php the_excerpt();?>
-          </div>
-
           <div class="page-builder">
             <?php the_content(); ?>
           </div>
             <?php the_tags(); ?>
         </div>
-
-        <?php get_sidebar(); ?>
     </div>
   <?php endwhile; ?>
 </main>

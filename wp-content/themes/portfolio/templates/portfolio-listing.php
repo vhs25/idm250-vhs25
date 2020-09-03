@@ -5,7 +5,6 @@ Template Name: Portfolio Listing
 ?>
 <?php get_header();?>
     <main class="wrapper">
-
     <?php
 
        if( is_page('art-portfolio')){

@@ -30,6 +30,7 @@
         <div class="nav_wrapper">
             <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
         </div>
+        <?php get_sidebar( 'primary' ); ?>
     </div>
 
 <?php else: ?>
@@ -45,6 +46,7 @@
     </div>
     <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
     </div>    
+    <?php get_sidebar( 'blog-sidebar' ); ?>
 </div>
 
 <?php endif; ?>
