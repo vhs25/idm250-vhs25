@@ -25,12 +25,14 @@ Template Name: Portfolio Listing
 
     <div class="all_tiles">
         <?php if ($query->have_posts()) : ?>
-            <?php while ($query->have_posts()) : $query->the_post();?>  
-            <a class="tile" href="<?php echo get_the_permalink()?>">
+            <?php while ($query->have_posts()) : $query->the_post();?>
+            <div class="tile">  
+            <a href="<?php echo get_the_permalink()?>">
                 <div class="post_thumbnail"><?php echo get_the_post_thumbnail()?></div>
                 <h2><?php the_title(); ?></h2>
                 <p> </p>
             </a>
+        </div>
             <?php endwhile; ?>
         <?php else : ?>
             <h2>Sorry, no results</h2>

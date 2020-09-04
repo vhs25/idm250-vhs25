@@ -57,8 +57,15 @@ Text Domain: portfolio
     --primebrightyellow: #ffd993;
     --primeyellow: #ffc55b;
     --primeorange: rgb(254, 183, 52);
-    --primelightblue: rgb(32, 177, 225);
+    --primelightblue: #2E648A;
     --primedarkblue: #162B3C;
+
+    /** Recipe Website **/
+    --recipeyellow: #cea83d;
+    --recipepink: #edd2cb;
+    --recipepurple: #ede8f9;
+    --recipeteal: #256d69;
+    --darkrecipeteal: #263f3e;
 }
 
 html, body {
@@ -149,8 +156,14 @@ figcaption{
 
 }
 
+
+
+
 /****** PROJECT PAGE *****/
-h2, h3{
+.main-content{
+    margin: 2rem 0 0;
+}
+h3{
     margin: 2rem 0 0;
 }
 .projectpadding{
@@ -165,6 +178,9 @@ h2, h3{
 .img_single{
     display: block;
     margin: center;
+}
+.head_flex{
+    margin: 0 0 2rem 0;
 }
 #head{
     background-color: var(--grayteal);
@@ -234,13 +250,14 @@ h2, h3{
     width: 100%;
     height: 100%;
 }
-/**** PROJECT COLORS *****/
+/**** PRIME COLORS *****/
 
 .primeorange{
     background-color: var(--primeorange);
 }
 .primelightblue{
     background-color: var(--primelightblue);
+    color: white;
 }
 .primedarkblue{
     background-color: var(--primedarkblue);
@@ -262,6 +279,32 @@ h2, h3{
     color: var(--primebrightyellow);
 }
 
+/* Recipe Site *****/
+.wf {
+    height: 300px;
+    text-align: center;
+
+}
+.wf:last-child{
+    max-width: 70%;
+}
+#wf {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recipepurple{
+    background-color: var(--recipepurple);
+}
+.recipeteal{
+    background-color: var(--grayteal);
+}
+.recipepink{
+    background-color: var(--recipepink);
+}
 
 
 
@@ -304,6 +347,10 @@ h2, h3{
     color: var(--darkgrayteal);
 }
 
+
+.menu-portfolio-menu-container{
+    width: 100%;
+}
 
 
 /* HOME PAGE (front-page) **/
@@ -360,10 +407,9 @@ h2, h3{
 
 .tile{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
-    margin: 1.5rem auto;
-    max-width: 350px;
+    margin: auto;
+    width: 350px;
     align-content: space-around;
-    padding: 0;
 }
 .tile:hover{
     border: 3.5px dotted var(--lightpurple);
@@ -373,11 +419,6 @@ h2, h3{
     font-family: sansBook, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
     line-height: 2rem;
-}
-.tile h2{
-    margin: 1rem auto 1.5rem;
-    width: 325px;
-    font-size: 1.15rem;
 }
 .tile:active{
     color: var(--purple);
@@ -453,10 +494,16 @@ h2, h3{
     font-size: 1.05rem;
 }
 
-.menu-item a:hover{
+a:hover{
     color: var(--lightpurple);
 }
-
+.resume:hover{
+    color: var(--purple);
+    border: 3.5px dotted var(--purple);
+}
+.resume{
+    padding: .25rem;
+}
 .menu-item a:active{
     color: var(--purple);
 }
@@ -499,6 +546,9 @@ h2, h3{
         width: 100%;
         object-fit: cover;
     }
+    .tile{
+        width: ;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -539,7 +589,7 @@ h2, h3{
     .projectpadding{
         padding: 1rem 0;
     }
-    h2, h3, p{
+    h3, p{
         padding: 0 3.5rem;
     }
 }
@@ -570,7 +620,7 @@ h2, h3{
     .art_detail_description{
         padding: 0 10%;
     }
-    h2, h3, p{
+    h3, p{
         padding: 0 4rem;
     }
 
@@ -600,11 +650,7 @@ h2, h3{
         max-width: 100%;
         margin: auto;
     }
-    #menu-portfolio-menu-container{
-        max-width: 350px;
-        text-align: center;
-        position: relative;
-    }
+    
     .nav, #menu-portfolio-menu{
         font-size: 1.2em;
         text-align: center;
@@ -615,9 +661,6 @@ h2, h3{
         border-style: solid;
         border-width: 0px 0px 1px 0px;
         
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
     .menu-item{
         padding: 0 1rem;
@@ -630,10 +673,10 @@ h2, h3{
         max-width: 350px;
         max-height: 350px;
         object-fit: cover;
-        margin: 3rem auto 0;
+        margin: 0 auto;
     }
-    .tile{
-        margin: 3rem auto;
+    .body_txt p{
+        padding: 0 1rem;
     }
     .pop-up_box{
         top: 15%
@@ -647,7 +690,6 @@ h2, h3{
     .single_main{
         border-right: .25px solid black;
         border-left: .25px solid black;
-        padding: 3rem 0 0;
     }
 }
 
@@ -709,14 +751,9 @@ h2, h3{
         max-width: 400px;
         margin: auto;
     }
-    #menu-portfolio-menu-container{
-        text-align: center;
-        position: relative
-    }
+
     .nav, #menu-portfolio-menu{
         text-align: center;
-        justify-self: center;
-
         padding-left: 0;
     }
     .tile{
@@ -736,9 +773,8 @@ h2, h3{
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
     }
-    .tile{
-        margin: 1rem auto;
-        /*height: 560px;**/
+    .body_head{
+        max-width: 75%;
     }
 
     /* ART POSTS **/
@@ -765,7 +801,7 @@ h2, h3{
     }
     .body_head{
         font-size: 2rem;
-        max-width: 70%;
+        max-width: 60%;
     }
     .pop-up_box img{
         max-height: 80%;
@@ -800,6 +836,9 @@ h2, h3{
     .art_detail_description{
         padding: 0 10%;
     }
+    .wf{
+        max-height: 200px;
+    }
 }
 
 /***************************/
@@ -810,6 +849,12 @@ h2, h3{
     }
     .wf{
         max-height: 200px;
+    }
+    .body_head{
+        max-width: 953px;
+    }
+    .body_txt{
+        max-width: 953px;
     }
 }
 @media screen and (max-width: 1135px){

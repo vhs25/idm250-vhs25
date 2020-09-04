@@ -27,9 +27,7 @@
         <picture class="portrait">
             <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/09/wp_portrait.png" alt="painted portrait of me" >
         </picture>
-        <div class="nav_wrapper">
             <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
-        </div>
         <?php get_sidebar( 'primary' ); ?>
     </div>
 
@@ -45,6 +43,7 @@
         </a>
     </div>
     <?php wp_nav_menu(['theme_location' => 'portfolio-menu']);?>
+
     </div>    
     <?php get_sidebar( 'blog-sidebar' ); ?>
 </div>
