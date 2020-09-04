@@ -9,7 +9,7 @@ get_header();?>
           <?php the_post_thumbnail(); ?>
           <h1 class="h1_single"><?php the_title(); ?></h1>
         </div>
-          <div class="page-builder">
+          <div class="page-builder project-page">
             <?php the_content(); ?>
           </div>
             <?php the_tags(); ?>

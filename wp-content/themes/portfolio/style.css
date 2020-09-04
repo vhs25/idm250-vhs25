@@ -52,12 +52,23 @@ Text Domain: portfolio
     **/
     --lightpurple: #dcb6ff;
     --purple: #621da1;;
+
+    /** Prime Colors **/
+    --primebrightyellow: #ffd993;
+    --primeyellow: #ffc55b;
+    --primeorange: rgb(254, 183, 52);
+    --primelightblue: rgb(32, 177, 225);
+    --primedarkblue: #162B3C;
 }
 
 html, body {
     height: 100%;
     margin: none;
-  }
+}
+p{
+    font-size: 1.15rem;
+    line-height: 2.3rem;
+}
 
 /* PAGE FLEX */
 section {
@@ -137,8 +148,14 @@ figcaption{
     margin: auto;
 
 }
-.page-builder{
-    padding: 0 4rem;
+
+/****** PROJECT PAGE *****/
+h2, h3{
+    margin: 2rem 0 0;
+}
+.projectpadding{
+    margin: 2.5rem 0;
+    padding: 1rem 0;
 }
 .single_main{
     margin: 0 auto;
@@ -212,6 +229,41 @@ figcaption{
     max-width: 40%;
     padding: 1rem;
 }
+
+.wp-block-image img{
+    width: 100%;
+    height: 100%;
+}
+/**** PROJECT COLORS *****/
+
+.primeorange{
+    background-color: var(--primeorange);
+}
+.primelightblue{
+    background-color: var(--primelightblue);
+}
+.primedarkblue{
+    background-color: var(--primedarkblue);
+}
+.primelink{
+    font-family: sansDemiBold;
+    font-weight: bold;
+    color: var(--primeyellow);
+}
+.primelink2{
+    font-family: sansDemiBold;
+    font-weight: bold;
+    color: var(--primedarkblue);
+}
+.primelink:hover{
+    color: var(--primedarkblue);
+}
+.primelink2:hover{
+    color: var(--primebrightyellow);
+}
+
+
+
 
 /* art posts CSS ***/
 .adp_image{
@@ -484,8 +536,11 @@ figcaption{
         max-width: 30px;
     }
 
-    .page-builder{
-        padding: 0 2rem;
+    .projectpadding{
+        padding: 1rem 0;
+    }
+    h2, h3, p{
+        padding: 0 3.5rem;
     }
 }
 
@@ -515,10 +570,10 @@ figcaption{
     .art_detail_description{
         padding: 0 10%;
     }
-
-    .single_main{
-        width: 80%;
+    h2, h3, p{
+        padding: 0 4rem;
     }
+
 }
 
 
@@ -590,8 +645,9 @@ figcaption{
         box-shadow: 0 -1px var(--purple);
     }
     .single_main{
-        border: none;
-        padding: 3rem 0;
+        border-right: .25px solid black;
+        border-left: .25px solid black;
+        padding: 3rem 0 0;
     }
 }
 
@@ -748,34 +804,18 @@ figcaption{
 
 /***************************/
 
-@media screen and (min-width: 1354px){
-    #single{
-        max-width: 80%;
-    }
+@media screen and (min-width: 1135px){
     #single{
         max-width: 953px;
     }
     .wf{
         max-height: 200px;
     }
-    }
-
-
-@media screen and (max-width: 1354px){
-
-    #single{
-        max-width: 85%;
-    }
 }
 @media screen and (max-width: 1135px){
 
     #single{
-        max-width: 85%;
-    }
-}
-@media screen and (max-width: 1005px){
-    #single{
-        max-width: 90%;
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 896px){
