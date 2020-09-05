@@ -17,7 +17,7 @@ function include_css_files() {
     // wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
     // Example of including a style local to your theme root
-    wp_enqueue_style('portfolio_css', '/wp-content/themes/portfolio/style.css');
+    wp_enqueue_style('idm250-css', get_template_directory_uri() . '/style.css');
 }
 
 // When WP performs this action, call our function
@@ -29,7 +29,7 @@ add_action('wp_enqueue_scripts', 'include_css_files');
  * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
  */
 function include_js_files() {
-    wp_enqueue_script('idm250-js', get_template_directory_uri() . 'script.js', [],
+    wp_enqueue_script('idm250-js', get_template_directory_uri() . '/script.js', [],
     false,
     true
 );

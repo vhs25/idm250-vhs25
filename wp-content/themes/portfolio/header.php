@@ -18,7 +18,7 @@
 <div class="fancy_head">
     <div class="head">
         <div class="head_logo">
-            <a href="index.php">
+            <a href="http://vstauffer.net/">
                 <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/07/logo.png" alt="painted header reading Victoria Stauffer" class="small">
                 <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/09/logo_large.png" alt="painted header reading Victoria Stauffer" class="large">
             </a>
@@ -37,8 +37,8 @@
 <div class="head_flex">
 <div class="simple_head">
     <div class="top">
-    <div  class="head_logo">
-        <a href="http://localhost:8888/idm250-vhs25/">
+    <div class="head_logo">
+        <a href="http://vstauffer.net/">
             <img src="http://localhost:8888/idm250-vhs25/wp-content/uploads/2020/07/logo.png" alt="Painted header reading Victoria Stauffer">
         </a>
     </div>

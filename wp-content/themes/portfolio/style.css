@@ -337,7 +337,7 @@ h3{
 }
 #search_field{
     position: absolute;
-    margin: 17.25px 1rem;
+    margin: 1.25px 1rem;
     border-top: none;
     border-right: none;
     border-left: none; 
@@ -429,7 +429,10 @@ h3{
 .head_logo img{
     max-width: 85%;
 }
+.large{
 
+    max-width: 85%;
+}
 .pop-up{
     position: fixed;
     z-index: 1;
@@ -493,7 +496,9 @@ h3{
     padding: 0 1rem;
     font-size: 1.05rem;
 }
-
+a{
+    color: var(--purple);
+}
 a:hover{
     color: var(--lightpurple);
 }
