@@ -54,11 +54,12 @@ Text Domain: portfolio
     --purple: #621da1;;
 
     /** Prime Colors **/
-    --primebrightyellow: #ffd993;
+    --primebrightyellow: #ffe3ae;
     --primeyellow: #ffc55b;
-    --primeorange: rgb(254, 183, 52);
+    --primeorange: rgb(255, 196, 87);
     --primelightblue: #2E648A;
     --primedarkblue: #162B3C;
+    --primeblue: #00ace3;
 
     /** Recipe Website **/
     --recipeyellow: #cea83d;
@@ -69,7 +70,7 @@ Text Domain: portfolio
 
     /** Sweat Sensor **/
     --ssblue: #2a87db;
-    --sspink: #f271be;
+    --sspink: #f58dcb;
     --ssgreen: #aac745;
 
     /* Bow App **/
@@ -80,7 +81,8 @@ Text Domain: portfolio
 
     /** Zodiac **/
     --zodiacorange: #fbaa71;
-    --zodiacblue: #2685a8;
+    --zodiaclightorange: #fcc8a3;
+    --zodiacblue: #1d637d;
     --zodiaclightblue: #d8f6fa;
 }
 
@@ -92,7 +94,10 @@ p{
     font-size: 1.15rem;
     line-height: 2.3rem;
 }
-
+ul{
+    font-size: 1.15rem;
+    line-height: 2.3rem;
+}
 /* PAGE FLEX */
 section {
     display: flex;
@@ -131,7 +136,7 @@ main{
     font: 2rem sansDemiBold;
 }
 
-.art_detail_description{
+.art_detail_description, .art_detail_link{
     font: 1.3rem sansBook;
     margin: 0 auto 10%;
 }
@@ -272,12 +277,16 @@ h3{
 .primeorange{
     background-color: var(--primeorange);
 }
+.primebrightyellow{
+    background-color: var(--primebrightyellow);
+}
 .primelightblue{
     background-color: var(--primelightblue);
     color: white;
 }
-.primedarkblue{
-    background-color: var(--primedarkblue);
+.primeblue{
+    background-color: var(--primeblue);
+    color: white;
 }
 .primelink{
     font-family: sansDemiBold;
@@ -294,6 +303,27 @@ h3{
 }
 .primelink2:hover{
     color: var(--primebrightyellow);
+}
+.primepersonaflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.primepersona, .primescreen{
+    width: 40%;
+    margin: auto .25rem;
+}
+.primepersonaflex p{
+    width: 40%;
+    margin: auto .25rem;
+    padding: 1.5rem 0;
+    align-content: center;
+}
+.primepersona figure{
+    margin: 0 2rem;
+    padding: 1.5rem 0;
 }
 
 /* Recipe Site *****/
@@ -339,6 +369,11 @@ h3{
 }
 .ssblue{
     background-color: var(--ssblue);
+    color: white;
+}
+.ssblue p{
+    font-size: 1.1rem;
+    line-height: 1.85rem;
 }
 .sspink{
     background-color: var(--sspink);
@@ -382,8 +417,39 @@ h3{
 
 /******** ZODIAC *********/
 
-
-
+.zodiacorange{
+    background-color: var(--zodiacorange);
+}
+.zodiacblue{
+    background-color: var(--zodiacblue);
+}
+.zodiaclightblue{
+    background-color: var(--zodiaclightblue);
+}
+.zodiacflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.zodiaccard{
+    width: 30%;
+}
+.zodiaccard figure{
+    margin: 0;
+}
+.zodiaclink{
+    color: var(--zodiacblue);
+    font-family: sansDemiBold;
+    font-weight: bold;
+}
+.zodiaclink:hover{
+    color: var(--zodiaclightorange);
+}
+.zodiacsitepadding{
+    padding-bottom: 3rem;
+}
 
 
 /* art posts CSS ***/
@@ -635,9 +701,6 @@ a:hover{
         width: 100%;
         object-fit: cover;
     }
-    .tile{
-        width: ;
-    }
 }
 
 @media screen and (max-width: 500px){
@@ -654,13 +717,11 @@ a:hover{
 
     .wrapper{
         margin: 0 auto;
-    
     }
 
     /* ART POSTS **/
     .art_detail_wrapper{
         max-width: 90%;
-
     }
     .art_detail_image{
         max-width: 100%;
@@ -669,6 +730,9 @@ a:hover{
         padding: 0 5%;
     }
     .art_detail_description{
+        padding: 0 5%;
+    }
+    .art_detail_link{
         padding: 0 5%;
     }
     .search_form{
@@ -684,6 +748,9 @@ a:hover{
     h3, p{
         padding: 0 3.5rem;
     }
+    ul{
+        padding: 0 3.5rem 0 4.5rem;
+    }
     .sry_no_results{
         font-size: 1.2rem
     }
@@ -694,6 +761,9 @@ a:hover{
     .sscaption{
         width: 80%;
         margin: auto;
+    }
+    .h1_single{
+        font-size: 2rem;
     }
 }
 
@@ -723,10 +793,15 @@ a:hover{
     .art_detail_description{
         padding: 0 10%;
     }
+    .art_detail_link{
+        padding: 0 10%;
+    }
     h3, p{
         padding: 0 4rem;
     }
-
+    ul{
+        padding: 0 4rem 0 5rem;
+    }
 }
 
 
@@ -804,6 +879,24 @@ a:hover{
     .bow-flex-p{
         width: auto; 
         padding: 0 4rem;
+    }
+    .primepersonaflex{
+        display: block;
+    }
+    .primepersona{
+        width: 100%;
+    }
+    .primescreen{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .primepersonaflex p{
+        width: 80%;
+        margin: auto;
+    }
+    .primepersona figure{
+        margin: 0 2rem;
+        padding: 1.5rem 0;
     }
 }
 
@@ -904,6 +997,9 @@ a:hover{
     .art_detail_description{
         padding: 0 10%;
     }
+    .art_detail_link{
+        padding: 0 10%;
+    }
 }
 @media screen and (min-width: 1000px){
     .nav, #menu-portfolio-menu{
@@ -948,6 +1044,9 @@ a:hover{
         padding: 0 10%;
     }
     .art_detail_description{
+        padding: 0 10%;
+    }
+    .art_detail_link{
         padding: 0 10%;
     }
     .wf{
