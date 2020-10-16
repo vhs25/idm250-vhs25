@@ -14,6 +14,20 @@ Template Name: Portfolio Listing
             ];
             $query = new WP_Query($args);
        }
+       elseif( is_page('fashion')){
+        $args = [
+            'post_type'      => 'fashion',
+            'post_status'    => 'publish'
+        ];
+        $query = new WP_Query($args);
+        }
+        elseif( is_page('photography')){
+            $args = [
+                'post_type'      => 'photography',
+                'post_status'    => 'publish'
+            ];
+            $query = new WP_Query($args);
+        }
        elseif(is_page('projects')){
             $args = [
                 'post_type'      => 'projects',

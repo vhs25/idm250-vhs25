@@ -80,7 +80,7 @@ Text Domain: portfolio
     --bowblue: #98c3d4;
 
     /** Zodiac **/
-    --zodiacorange: #fbaa71;
+    --zodiacorange: # fbaa71;
     --zodiaclightorange: #fcc8a3;
     --zodiacblue: #1d637d;
     --zodiaclightblue: #d8f6fa;
@@ -89,6 +89,14 @@ Text Domain: portfolio
 html, body {
     height: 100%;
     margin: none;
+    overflow-x: hidden;
+    width: 100vw;
+}
+body{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
 }
 p{
     font-size: 1.15rem;
@@ -383,6 +391,7 @@ h3{
     border-radius: 3px;
 }
 .sscaption{
+    padding: 0;
     width: 40%;
     margin: auto;
 }
@@ -526,7 +535,7 @@ h3{
     padding: 0;
     color: var(--teal);
     font-size: 2rem;
-    max-width: 85%;
+    max-width: 82.5%;
 }
 .body_txt{
     font-family: sansBook, Arial, Helvetica, sans-serif;
@@ -534,7 +543,7 @@ h3{
     line-height: 2rem;
     margin: 1.5rem auto 2rem;
     padding: 0;
-    max-width: 85%;
+    max-width: 82.5%;
 }
 .body_txt:last-child{
     margin: 1.5rem auto 3rem;
@@ -542,8 +551,7 @@ h3{
 .footer_head{
     font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: auto;
-    padding: 0;
-    max-width: 85%;
+    max-width: 82.5%;
     font-size: 1.25rem;
     padding: 0 .5rem;
 }
@@ -552,7 +560,7 @@ h3{
     font-family: sansBook, Arial, Helvetica, sans-serif;
     margin: auto;
     padding: 0 .5rem;
-    max-width: 85%;
+    max-width: 82.5%;
 }
 
 .tile{
@@ -577,11 +585,11 @@ h3{
     padding: 0;
 }
 .head_logo img{
-    max-width: 85%;
+    max-width: 82.5%;
 }
 .large{
 
-    max-width: 85%;
+    max-width: 82.5%;
 }
 .pop-up{
     position: fixed;
@@ -600,9 +608,9 @@ h3{
 
     margin: auto;
     position: absolute;
-    top: 5%;
-    left: 17.5%;
-    right: 17.5%;
+    top: 2.5%;
+    left: 17.2.5%;
+    right: 17.2.5%;
 }
 .pop-up_box img{
     max-width: 90%;
@@ -631,20 +639,28 @@ h3{
 .menu-item{
     font-size: 1.05rem;
 }
-.nav a, #menu-item-151{
-    padding: 0 7%;
+.nav a, #menu-item-175{
+    padding: 0 2.5%;
     font-size: 1.05rem;
     border: var(--purple);
     border-style: solid;
     border-width: 0px 1.5px 0px 1.5px;
 }
+#menu-item-786, #menu-item-791, #menu-item-151{
+    padding: 0 2.5%;
+    font-size: 1.05rem;
+    border: var(--purple);
+    border-style: solid;
+    border-width: 0px 1.5px 0px 0px;
+}
 .nav a:last-child, #menu-item-225{
-    padding: 0 1rem;
+    padding: 0 2.5%;
     font-size: 1.05rem;
 }
 .nav a:first-child, #menu-item-175{
-    padding: 0 1rem;
+    padding: 0 2.5%;
     font-size: 1.05rem;
+    border-width: 0px 1.5px 0px 0px;
 }
 a{
     color: var(--purple);
@@ -727,13 +743,13 @@ a:hover{
         max-width: 100%;
     }
     .art_detail_title{
-        padding: 0 5%;
+        padding: 0 2.5%;
     }
     .art_detail_description{
-        padding: 0 5%;
+        padding: 0 2.5%;
     }
     .art_detail_link{
-        padding: 0 5%;
+        padding: 0 2.5%;
     }
     .search_form{
         width: 350px;
@@ -811,7 +827,7 @@ a:hover{
         display: none;
     }
     .small{
-        max-width: 85%;   
+        max-width: 82.5%;   
     }
     .head_logo{
         text-align: center;
@@ -833,7 +849,7 @@ a:hover{
         font-size: 1.2em;
         text-align: center;
         padding: 5% 0 .5rem 0;
-        margin: 0 7.5%;
+        margin: 0 7.2.5%;
 
         border: var(--purple);
         border-style: solid;
@@ -981,7 +997,7 @@ a:hover{
         grid-row-gap: 1rem;
     }
     .body_head{
-        max-width: 75%;
+        max-width: 72.5%;
     }
 
     /* ART POSTS **/
