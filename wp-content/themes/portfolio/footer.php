@@ -1,6 +1,6 @@
 <div class="footer">
         <div class="footer_head">
-            <a class="resume" href="/wp-content/uploads/2020/09/stauffer_resumerevised.pdf">View My Resume</a>
+            <a class="resume" href="/wp-content/uploads/2020/10/victoria_stauffer_resume-1.pdf" target="_blank">View My Resume</a>
         </div>
         <div class="footer_txt">
             <p>vstauffer21@gmail.com</p>

@@ -50,8 +50,8 @@ Text Domain: portfolio
     --recipeteal: #256d69;
     --darkrecipeteal: #263f3e;
     **/
-    --lightpurple: #dcb6ff;
-    --purple: #621da1;;
+    --lightpurple: rgb(220, 182, 255);
+    --purple: rgb(98, 29, 161);
 
     /** Prime Colors **/
     --primebrightyellow: #ffe3ae;
@@ -80,10 +80,21 @@ Text Domain: portfolio
     --bowblue: #98c3d4;
 
     /** Zodiac **/
-    --zodiacorange: # fbaa71;
+    --zodiacorange: #fbaa71;
     --zodiaclightorange: #fcc8a3;
     --zodiacblue: #1d637d;
     --zodiaclightblue: #d8f6fa;
+
+    /** DI **/
+    --dired: #ba333e;
+    --diyellow: #f4a546;
+    --digreen: #116d30;
+    --diblue: #19226d;
+    --dipurple: #41235b;
+
+    /** Starlight**/
+    --slgold: rgb(249, 213, 11);
+    --slgold2:rgb(216, 168, 8);
 }
 
 html, body {
@@ -102,6 +113,9 @@ p{
     font-size: 1.15rem;
     line-height: 2.3rem;
 }
+img {
+    max-width: 100%;
+  }
 ul{
     font-size: 1.15rem;
     line-height: 2.3rem;
@@ -336,7 +350,6 @@ h3{
 
 /* Recipe Site *****/
 .wf {
-    height: 300px;
     text-align: center;
 
 }
@@ -460,6 +473,42 @@ h3{
     padding-bottom: 3rem;
 }
 
+/******** DESTINATION IMAGINATION ******/
+.wp-block-embed-vimeo, .wp-block-embed-youtube{
+    margin: 0 auto;
+    text-align: center;
+}
+.dilink{
+    color: var(--diyellow);
+}
+.dilink:hover{
+    color: var(--diblue);
+}
+h4{
+    margin: 2rem 0 0;
+    font-size: 1.2rem;
+    padding: 0 4rem;
+}
+.dired{
+    background-color: var(--dired);
+    color: rgba(255, 255, 255, 0.899);
+}
+.diyellow{
+    background-color: var(--diyellow);
+}
+.digreen{
+    background-color: var(--digreen);
+    color: rgba(255, 255, 255, 0.899);
+}
+
+.diblue{
+    background-color: var(--diblue);
+    color: rgba(255, 255, 255, 0.899);
+}
+.dipurple{
+    background-color: var(--dipurple);
+    color: rgba(255, 255, 255, 0.899);
+}
 
 /* art posts CSS ***/
 .adp_image{
@@ -468,6 +517,17 @@ h3{
 }
 .adp_description{
     font: 1.5rem sansBook;
+}
+
+/**** Costumes ****/
+.sl-link{
+    color: var(--slgold2);
+}
+.sl-link:hover{
+    color: var(--slgold);
+}
+.sltxt{
+    margin: auto 0;
 }
 
 /* SEARCH ICON **/
@@ -795,6 +855,10 @@ a:hover{
         top: 30%
     }
 
+    .wf {
+        height: 300px;
+    }
+
 
     /* ART POSTS **/
     .art_detail_wrapper{
@@ -820,7 +884,12 @@ a:hover{
     }
 }
 
-
+@media screen and (max-width: 750px){
+    .wp-image-213{
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 824.99px){
     .large, .img, .portrait{
@@ -927,10 +996,6 @@ a:hover{
         grid-template-columns: 60% 40%;
         grid-template-rows: 50% 50%;
     }
-
-    .head img{
-        max-width: 100%;
-    }
     .portrait{
         grid-column-start: 2;
         grid-column-end: 3;
@@ -940,17 +1005,24 @@ a:hover{
         display: flex;
         align-items: flex-end;
     }
+    .portrait img{
+        max-width: 100%;
+    }
     img.small{
         display: none;
     }
-
+    .menu-portfolio-menu-container{
+        justify-self: center;
+        align-self: center;
+    }
     .head_logo{
-        width: 350px;
+        max-width: 350px;
         justify-self: center;
         margin: 2rem auto 0;
-
     }
-
+    .head_logo img{
+        max-height: 100%;
+    }
     .top{
         display: grid;
         grid-template-columns: 3/5fr 2/5fr;
@@ -1024,6 +1096,9 @@ a:hover{
     .footer_head, .footer_txt, .body_txt{
         font-size: 1.25rem;
         max-width: 70%;
+    }
+    .footer{
+        min-height: 140px
     }
     .body_head{
         font-size: 2rem;
